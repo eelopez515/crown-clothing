@@ -2,9 +2,9 @@ import React from 'react'
 //Components
 import Directory from '../Directory/Directory'
 
-import './Hompage.sass'
+import './HomePage.sass'
 
-function Hompage() {
+function HomPage() {
     return (
         <div className='homepage'>
             <Directory />
@@ -12,4 +12,4 @@ function Hompage() {
     )
 }
 
-export default Hompage
+export default HomPage
