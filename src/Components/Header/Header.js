@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../Assets/crown.svg'
 import './Header.sass'
 
+
 function Header() {
     return (
         <div className='header'>
