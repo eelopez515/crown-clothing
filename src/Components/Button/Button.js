@@ -1,9 +1,9 @@
 import React from 'react'
 import './Button.sass'
 
-function Button({ children, ...props }) {
+function Button({ children, isGoogleSignIn, ...props }) {
     return (
-        <button className='button' {...props} >
+        <button className={`${isGoogleSignIn ? 'google__sign__in' : ''} button`} {...props} >
             {children}
         </button>
     )

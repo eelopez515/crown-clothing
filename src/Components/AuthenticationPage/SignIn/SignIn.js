@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 //Components
 import FormInput from '../../FormInput/FormInput'
 import Button from '../../Button/Button'
+import { signInWithGoogle } from '../../../Firebase/firebase.utils'
 
 import './SignIn.sass'
 
@@ -55,7 +56,13 @@ class SignIn extends Component {
                     required
                     label='Password'
                     />
-                    <Button type='submit'>Sign In</Button>
+                    <div className="buttons">
+                        <Button type='submit'>Sign In</Button>
+                        <Button
+                        onClick={signInWithGoogle}
+                        isGoogleSignIn
+                        >Sign In With Google</Button>
+                    </div>
                 </form>
             </div>
         )
