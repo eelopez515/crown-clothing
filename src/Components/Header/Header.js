@@ -29,7 +29,7 @@ function Header({ currentUser }) {
                     :
                     <Link
                     className='option'
-                    to='/signin'
+                    to='/authentication'
                     >
                         SIGN IN
                     </Link>
